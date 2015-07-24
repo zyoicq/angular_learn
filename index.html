@@ -2,11 +2,22 @@
 <html ng-app>
   <head>
     <script src="js/angular.js"/></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
-    <div>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <h1>Hello, {{ yourName }}!</h1>
+    <div ng-controller="InvoiceCntl">
+    <b>Invoice:</b>
+    <br>
+    <br>
+    <table>
+    	<tr><td>Quantity</td><td>Cost</td></tr>
+    	<tr>
+    		<td><input type="integer" min="0" ng-model="qty" required></td>
+    		<td><input type="number" ng-model="cost" required></td>
+    	</tr>
+    	</table>
+    	<hr>
+    	<b>Total:</b>{{qty * cost |currency}}
     </div>
   </body>
 </html>
