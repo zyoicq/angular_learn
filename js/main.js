@@ -10,3 +10,5 @@ it('should show of angular binding',function(){
 	input('cost').enter('5.00');
 	expect(binding('qty * cost')).toEqual('$10.00');
 })
+
+
