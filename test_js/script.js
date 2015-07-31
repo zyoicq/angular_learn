@@ -1,7 +1,7 @@
-function GreetCtrl($scope){
-	$scope.name = 'World';
-}
+function MyCtrl($scope){
+	$scope.action = function(){
+		$scope.name = 'OK';
+	}
 
-function ListCtrl($scope){
-	$scope.names = ['Igor','Misko','Vojta'];
+	$scope.name = 'World';
 }

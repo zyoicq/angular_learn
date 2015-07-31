@@ -6,13 +6,10 @@
 	<script src="test_js/script.js"></script>	
   </head>
   <body>
-    <div ng-controller="GreetCtrl">
+    <div ng-controller="MyCtrl">
     	Hello {{name}}!
-    </div>
-    <div ng-controller="ListCtrl">
-    	<ol>
-    		<li ng-repeat="name in names"> {{name}}</li>
-    	</ol>
+    <button ng-click="action()">
+    OK</button>
     </div>
   </body>
 </html>
